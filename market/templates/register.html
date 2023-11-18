@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Registration
+
+{% endblock %}
+{% block content %}
+<body class="text-center">
+    <h2>Please create your account    </h2>
+    <br>
+    <div class="container col-4">
+        <form method="POST" class="form-regiiter" style="color:white">
+            {{ form.hidden_tag() }}
+            <br>
+            {{ form.username(class="form-control", placeholder='Username')}}
+           <br>
+            {{ form.email(class="form-control", placeholder='Email')}}
+            
+<br>
+            {{ form.password1(class="form-control", placeholder='Password')}}
+            <br>
+            {{ form.password2(class="form-control", placeholder='Confirm Password')}}
+            <br>
+            
+            <p>Already have an account?  <a class="btn btn-secondary" href="{{url_for('login_page')}}">Login</a> </p>
+    
+            
+            
+            {{ form.submit(class="btn btn-lg btn-block btn-primary")}}
+            <br>
+
+
+        </form>
+    </div>
+    <br>
+</body>
+
+
+
+{% endblock %}

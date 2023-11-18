@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}
+    Agro Market
+{% endblock %}
+
+{% block content %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* Set a background color */
+  }
+
+  header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      max-width: 75%; /* Set max-width to 75% of the viewport width */
+      margin: auto; /* Center the header within the page */
+  }
+
+  main {
+      padding: 20px;
+  }
+
+  footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+</style>
+
+<body>
+  <header>
+      <h1>Market App</h1>
+      <p>Welcome to our market platform</p>
+      <br>
+      <Br>
+  </header>
+
+  <main class="container mt-4">
+      <section>
+          <h2>About Us</h2>
+          <p>Welcome to Market App, where shopping meets convenience! Our platform is designed to provide you with a seamless and enjoyable shopping experience, connecting buyers and sellers in a vibrant online marketplace.</p>
+
+          <p>At Market App, we believe in creating a community where individuals can discover unique products, connect with trustworthy sellers, and make informed purchasing decisions. Whether you're a seller looking to showcase your products or a buyer on the hunt for something special, we've got you covered.</p>
+      </section>
+
+      <section>
+          <h2>How It Works</h2>
+          <p>Using Your Market App is easy and straightforward. Follow these simple steps to make the most of our platform:</p>
+          <ol>
+              <li><strong>Explore Products:</strong> Browse through a wide range of products listed by our trusted sellers. Use search and filtering options to find exactly what you're looking for.</li>
+              <li><strong>List Your Products:</strong> Are you a seller? Easily list your products on Your Market App. Provide clear descriptions and attractive images to showcase your offerings.</li>
+              <li><strong>Connect with the Community:</strong> Engage with other users, leave reviews, and build a network within the Your Market App community. Share your experiences and discover new products.</li>
+          </ol>
+          <p>Whether you're buying or selling, Your Market App is designed to make your experience enjoyable and hassle-free. Join us today and be a part of a vibrant online marketplace!</p>
+      </section>
+  </main>
+
+  <footer class="bg-dark text-white">
+      <p>&copy; 2023 Market App. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-a3H4egDElm3b0I/3HQPiL5fXSCHwDpmaMlnF8xNBaqA9FYjkt3meK/PwD9tuKxCv6" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+{% endblock %}
